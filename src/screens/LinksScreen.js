@@ -1,10 +1,23 @@
 import React from 'react';
-import { ScrollView, StyleSheet } from 'react-native';
-import { ExpoLinksView } from '@expo/samples';
+import { Platform, ScrollView, StyleSheet } from 'react-native';
+let ExpoLinksView = (Platform.OS !== 'web') && require('@expo/samples').ExpoLinksView;
+if (!ExpoLinksView) {
+  ExpoLinksView = require('./../polyfills-web/ExpoLinksView').default;
+}
+
+let headerStyle;
+
+if (Platform.OS === 'web') {
+  headerStyle = {
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomColor: 'rgba(0, 0, 0, .3)'
+  };
+}
 
 export default class LinksScreen extends React.Component {
   static navigationOptions = {
     title: 'Links',
+    headerTitleContainerStyle: headerStyle,
   };
 
   render() {

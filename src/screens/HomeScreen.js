@@ -8,7 +8,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import { WebBrowser } from 'expo';
+const WebBrowser = (Platform.OS !== 'web') && require('expo').WebBrowser;
 
 import { MonoText } from '../components/StyledText';
 
@@ -88,13 +88,21 @@ export default class HomeScreen extends React.Component {
   }
 
   _handleLearnMorePress = () => {
-    WebBrowser.openBrowserAsync('https://docs.expo.io/versions/latest/guides/development-mode');
+    const learnMoreUrl = 'https://docs.expo.io/versions/latest/guides/development-mode';
+    if (Platform.OS === 'web') {
+      window.open(learnMoreUrl, '_blank');
+    } else {
+      WebBrowser.openBrowserAsync(learnMoreUrl);
+    }
   };
 
   _handleHelpPress = () => {
-    WebBrowser.openBrowserAsync(
-      'https://docs.expo.io/versions/latest/guides/up-and-running.html#can-t-see-your-changes'
-    );
+    const helpUrl = 'https://docs.expo.io/versions/latest/guides/up-and-running.html#can-t-see-your-changes'
+    if (Platform.OS === 'web') {
+      window.open(helpUrl, '_blank');
+    } else {
+      WebBrowser.openBrowserAsync(helpUrl);
+    }
   };
 }
 

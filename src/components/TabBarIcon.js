@@ -1,5 +1,10 @@
 import React from 'react';
-import { Icon } from 'expo';
+import { Platform } from 'react-native';
+
+let Icon = (Platform.OS !== 'web') && require('expo').Icon;
+if (!Icon) {
+    Icon = require('./../polyfills-web/Icon');
+}
 
 import Colors from '../constants/Colors';
 
