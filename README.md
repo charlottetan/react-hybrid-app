@@ -16,6 +16,10 @@ The full list can be found in `package.json`.
 ### Gify goodness
 [<img src='https://raw.githubusercontent.com/charlottetan/react-hybrid-app/master/_screenshots/ios.gif' width='25.65%'>](https://raw.githubusercontent.com/charlottetan/react-hybrid-app/master/_screenshots/ios.gif) [<img src='https://raw.githubusercontent.com/charlottetan/react-hybrid-app/master/_screenshots/web.gif' width='73%'>](https://raw.githubusercontent.com/charlottetan/react-hybrid-app/master/_screenshots/web.gif)
 
+### Version information
+Expo SDK: 31.0.2<br/>
+React Native: expo-0.57.1
+
 ### Further reading
 I stood on the shoulders of these giants:
 * Jonny Kalambay's [Your First Hybrid App in Minutes — React Native on the Web](https://medium.com/@jonnykalambay/your-first-hybrid-app-in-15-minutes-react-native-on-the-web-2cc2646051e) and corresponding github repo, [hybrid-app-pokedex](https://github.com/jonnyk20/hybrid-app-pokedex)
