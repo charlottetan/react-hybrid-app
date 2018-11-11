@@ -14,7 +14,7 @@ Script | Action
 The full list can be found in `package.json`.
 
 ### Gify goodness
-[<img src='https://raw.githubusercontent.com/charlottetan/react-hybrid-app/master/_screenshots/ios.gif' width='30%'>](https://raw.githubusercontent.com/charlottetan/react-hybrid-app/master/_screenshots/ios.gif) [<img src='https://raw.githubusercontent.com/charlottetan/react-hybrid-app/master/_screenshots/web.gif' width='90%'>](https://raw.githubusercontent.com/charlottetan/react-hybrid-app/master/_screenshots/web.gif)
+[<img src='https://raw.githubusercontent.com/charlottetan/react-hybrid-app/master/_screenshots/ios.gif' width='25.65%'>](https://raw.githubusercontent.com/charlottetan/react-hybrid-app/master/_screenshots/ios.gif) [<img src='https://raw.githubusercontent.com/charlottetan/react-hybrid-app/master/_screenshots/web.gif' width='73%'>](https://raw.githubusercontent.com/charlottetan/react-hybrid-app/master/_screenshots/web.gif)
 
 ### Further reading
 I stood on the shoulders of these giants:
